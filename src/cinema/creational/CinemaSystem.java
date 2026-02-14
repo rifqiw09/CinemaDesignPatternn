@@ -4,8 +4,8 @@ public class CinemaSystem {
 
     private static CinemaSystem instance;
 
-    // Constructor private supaya tidak bisa dibuat dari luar
-    private CinemaSystem() {}
+    private CinemaSystem() {
+    }
 
     public static CinemaSystem getInstance() {
         if (instance == null) {

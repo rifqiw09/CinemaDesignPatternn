@@ -12,9 +12,6 @@ import cinema.structural.*;
 import cinema.structural.BookingFacade;
 import cinema.behavioral.*;
 
-
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -25,11 +22,16 @@ public class Main {
 
         system1.startSystem();
 
+        System.out.println("Status System");
         System.out.println(system1 == system2);
+        System.out.println("Status System End");
 
         // Factory
-        User admin = UserFactory.createUser("admin", "Rifqi");
+        User admin = UserFactory.createUser("admin", "Adrian");
         System.out.println("Admin: " + admin.getName());
+        User customer = UserFactory.createUser("customer", "Fallore");
+        System.out.println("Customer: " + customer.getName());
+
         // Prototype
         Movie movie1 = new Movie("Avengers", 120);
         Movie movie2 = movie1.clone();
